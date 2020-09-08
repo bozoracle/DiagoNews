@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-
+@media only screen and (min-width: 768px) {
 * {
     box-sizing: border-box;
     margin: 0;
@@ -260,59 +260,5 @@ button:hover {
 }
 /*Nav Bar Ends*/
 
-
-/*Responsive */
-@media (max-width: 720px) { 
-    body {
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        background: #3899ec ;
-        background-origin: center;
-        z-index: 1;
-        overflow: hidden;
-        
-    }
-    #our-team-title {
-        margin:36.8438px 0px 0px 198px;
-    }
-    #team-left-tile {
-        margin:33.1562px 0px 0px 47px;
-    }
-    #team-right-tile {
-        margin:36.8438px 73.6875px 0px 0px;
-    }
-    .mail {
-        color: black;
-    }
-    .mail:hover {
-        color: #414141;
-
-    }
-    .titleC {
-        margin:0px 0px 0px 2px;
-    }
-    .home {
-    align-items:center;
-    background-color:hsla(192, 100%, 33%, 0.8);
-    border-radius:50px;
-    color:hsl(195, 13%, 94%);
-    font-size:19.2px;
-    font-weight:500;
-    gap:normal;
-    margin:13px 0px 0px 106px; 
-    padding:9px 25px;
-    text-align:center;
-    display: block;
-    border: none;
-    position: relative;
-    }
-    .logo .nav_links {
-        display: none;
-    }
- 
-
-    button {
-        display: none;
-    }
 }
+

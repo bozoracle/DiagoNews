@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+/* when you add a * it means "everything */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif ;
+    overflow: hidden;
+}
+
+/*NAV BAR BEGINS*/
+li, a, button {
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1 ;
+    text-decoration: none;
+    position: center;
+    font-size: 120%;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+
+}
+.logo a {
+    margin:18px 0px 0px;
+}
+header  {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-content: center;
+    padding: 30px 50px;
+    position: center;
+    background-color: #24252A;
+    z-index: 2;
+}
+section {
+    display: flex;
+    align-content: space-between ;
+    flex-direction: row;
+}
+.logo {
+    cursor: pointer;    
+}
+.nav_links {
+    list-style: none;
+    align-content: space-between;
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+}
+.nav_links li {
+    display: flex;
+    align-content: space-between;
+    flex-direction: row;
+    
+    
+}
+.Title {
+    display: none;
+}
+.nav_links li a {
+    transition: all 0.3 ease 0s;
+    margin: 4px 275px 0px 7px;
+}
+
+.nav_links li a:hover {
+    color: #3899ec;
+}
+button {
+    padding: 9px 25px;
+    background: rgba(0,136,169,1);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3 ease 0s;
+    border: none;
+}
+button:hover {
+    background: rgba(0,136,169,0.8);
+}
+/* Nav Bar end */
+/*Layout begins */
+.text-section  {
+    color: #edf0f1;
+    display: flex;
+    align-content: space-between;
+    flex-direction: row;
+    font-size: 125%;
+}
+.left-section  {
+    margin: 10% 5% 5% 5%;
+    display: flex;
+    align-content: space-between;
+    flex-direction: column;
+    background: rgba(0,0,0,0.2);
+    margin:92px 96px 96px;
+    padding:65px 96px 26px;
+    padding-bottom: 20px;
+}
+.right-section {
+    margin: 10% 5% 5% 25%;
+    display: flex;
+    align-content: space-between;
+    flex-direction: column;
+    background: rgba(0,0,0,0.2);
+    margin:92px 96px 96px;
+    padding:65px 96px 26px;
+}
+.top-text  {margin-bottom: 10%;}
+body {
+    background: #3899ec;
+    z-index: 1;
+}
+.burger {
+    display: none;
+}
+.burger div {
+    width: 30px;
+    height: 2px;
+    background: white;
+    margin: 5px ;
+
+}
+/*Phone style */
+@media (max-width: 1024px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #3899ec ;
+        background-origin: center;
+        z-index: 1;
+        
+    }
+    .logo {
+        opacity: 1;
+        size: 50%;
+        display: none;
+    }
+    .nav_links {
+        list-style: none ;
+        width: 100%;
+
+    }
+    .nav_links li {
+        display: inline-block;
+        padding: 0px 20px;
+        z-index: 3;
+
+    }
+    
+    .nav_links li a {
+        transition: all 0.3 ease 0s;
+    }
+    
+    .nav_links li a:hover {
+        color: #3899ec;
+    }
+    button {
+        display: none;
+    }
+    .burger { display: none;}
+    .phone_links {display: none;}
+
+}
+
+@media (max-width: 760px) { 
+    body {
+        overflow-x:hidden ;
+        background: #2b2d36;
+    }
+    nav {
+        background: #24252A ;
+    }
+    .nav_links{
+        display: flex;
+        flex-direction: row;
+        text-transform: capitalize;
+        letter-spacing: 3px;
+    
+    
+    }
+    }
+

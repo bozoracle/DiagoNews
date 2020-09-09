@@ -1,4 +1,6 @@
 #DiagoNews website
-This website is a school project.Wanna help leave a comment
-This website is still not adapted to phone please wait
+becomes
 # poleLiteraire
+This Website is now mostly responsive however pc user will have a lot of advantages concerning design.
+Contact page is still not responsive thanks for your patience
+

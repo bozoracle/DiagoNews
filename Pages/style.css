@@ -23,7 +23,9 @@ body {
     background: #3899ec; 
     position: absolute;
     z-index: 5;
-    padding-bottom: 25%;}
+    padding-bottom: 25%;
+    color: #2c475f;
+}
 
 #our-team-title
 {

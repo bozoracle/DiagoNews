@@ -126,6 +126,6 @@ button:hover {
         justify-content: center;
         align-items: center;
         background: #24252A ;
-        
+        width: 100%;
     }
 }

@@ -144,11 +144,11 @@ main {
   /* Small screens */
   @media only screen and (max-width: 600px) {
     body {
-      overflow: scroll;
+      overflow-x: scroll;
       background: #141418;
-      overflow: hidden;
     }
     .navbar {
+      display: fixed;
       bottom: 0;
       width: 100vw;
       height: 5rem;
@@ -174,20 +174,30 @@ main {
       padding: 0;
       margin-left: -20vh;
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       align-content: flex-start;
       align-items: flex-start;
       background: #141418;
     }
   }
- 
+ .contact-card {
+   width: 1vh;
+   padding: 0 0 0 0 ;
+   margin: 0 0 0 0 ;
+   height: 1vh;
+ }
   
   /* Large screens */
   @media only screen and (min-width: 600px) {
+    body {
+      overflow-x: scroll ;
+    }
     .navbar {
       top: 0;
       width: 5rem;
       height: 100vh;
+      display: fixed;
+      z-index: 500;
     }
   
     .navbar:hover {
@@ -206,6 +216,18 @@ main {
     .navbar:hover .logo-text
     {
       left: 0px;
+    }
+    main {
+      display: flex;
+      flex-direction: row;
+    }
+    .contact-card {
+      width: 1vh;
+      padding: 0 0 0 0 ;
+      margin: 0 0 0 0 ;
+      height: 1vh;
+      display: flex;
+      flex-direction: row;
     }
   }
   

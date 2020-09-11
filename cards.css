@@ -146,6 +146,7 @@ main {
     body {
       overflow-x: scroll;
       background: #141418;
+      overflow-y: hidden;
     }
     .navbar {
       display: fixed;

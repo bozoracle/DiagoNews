@@ -150,7 +150,10 @@
     .nav-link {
       justify-content: center;
     }
-  
+  .nav-item,.logo {
+    width: 7vh;
+    
+  }
     main {
       margin: 0;
     }

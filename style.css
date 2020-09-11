@@ -145,7 +145,6 @@
   
     .navbar-nav {
       flex-direction: row;
-      overflow-y: visible;
     }
   
     .nav-link {

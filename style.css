@@ -135,6 +135,10 @@
       width: 100vw;
       height: 5rem;
     }
+    svg {
+      width: 35vh;
+      height: 15vh;
+    }
   
     .logo {
       display: none;

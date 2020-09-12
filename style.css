@@ -7,12 +7,13 @@
     --bg-secondary: #141418;
     --transition-speed: 600ms;
   }
+
   body {
     color: black;
     background-color: white;
     margin: 0;
     padding: 0;
-    background: #3899ec;
+    background: var(--bg-secondary);
     overflow-x: hidden;
   }
   
@@ -31,10 +32,7 @@
   main {
     margin-left: 5rem;
     padding: 1rem;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    color:white;
+    color:var(--text-secondary);
 }  
   
   .navbar {
@@ -193,17 +191,17 @@
   }
   
   .light {
-    --text-primary: #1f1f1f;
+    --text-primary: #696969;
     --text-secondary: #000000;
-    --bg-primary: #ffffff;
-    --bg-secondary: #e4e4e4;
+    --bg-primary: #F5FFFA;
+    --bg-secondary: #F0FFF0;
   }
   
   .solar {
-    --text-primary: #576e75;
-    --text-secondary: #35535c;
-    --bg-primary: #fdf6e3;
-    --bg-secondary: #f5e5b8;
+    --text-primary: #FFFAFA;
+    --text-secondary: #F8F8FF;
+    --bg-primary: #187bcd;
+    --bg-secondary: #1167b1;
   }
   
   .theme-icon {
@@ -221,3 +219,89 @@
   .solar #solarIcon {
     display: block;
   }
+
+  /* FAQ section */ 
+  h2 {
+    margin: 20px auto 80px;
+    font-size: 38px;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 1.5;
+  }
+  
+  details {
+    width: 75%;
+    min-height: 5px;
+    max-width: 700px;
+    padding: 45px 70px 45px 45px;
+    margin: 0 auto;
+    position: relative;
+    font-size: 22px;
+    border: 1px solid rgba(0,0,0,.5);
+    border-radius: 15px;
+    box-sizing: border-box;
+    transition: all .3s;
+  }
+  
+  details + details {
+    margin-top: 20px;
+  }
+  
+  details[open] {
+    min-height: 50px;
+    background-color: #7303c0;
+    box-shadow: 2px 2px 20px rgba(0,0,0,.2);
+  }
+  
+  details p {
+    color: #ffffff;
+    font-weight: 300;
+  }
+  
+  summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  summary:focus {
+    outline: none;
+    
+  }
+  
+  summary:focus::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 0 5px #ec38bc;
+  }
+  
+  summary::-webkit-details-marker {
+    display: none
+  }
+  .control-icon {
+    fill: #ec38bc;
+    transition: .3s ease;
+    pointer-events: none;
+  }
+  
+  .control-icon-close {
+    display: none;
+  }
+  
+  details[open] .control-icon-close {
+    display: initial;
+    transition: .3s ease;
+  }
+  
+  details[open] .control-icon-expand {
+    display: none;
+  }
+  

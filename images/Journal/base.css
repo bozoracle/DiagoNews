@@ -9,7 +9,7 @@
     --transition-speed: 600ms;
   }
 body {
-    background: var(--bg-secondary);
+    background: var(--bg-primary);
     color: #fff;
     font-family: 'Noto Sans', sans-serif;
 }
@@ -134,7 +134,7 @@ body::-webkit-scrollbar {
  /* navbar */
  .navbar {
     position: fixed;
-    background-color: var(--bg-primary);
+    background-color: var(--bg-secondary);
     transition: width 600ms ease;
     z-index: 100;
   }
@@ -286,17 +286,17 @@ body::-webkit-scrollbar {
   }
   
   .light {
-    --text-primary: #1f1f1f;
+    --text-primary: #696969;
     --text-secondary: #000000;
-    --bg-primary: #ffffff;
-    --bg-secondary: #e4e4e4;
+    --bg-primary: #0cebeb;
+    --bg-secondary: #29ffc6;
   }
   
   .solar {
-    --text-primary: #576e75;
-    --text-secondary: #35535c;
-    --bg-primary: #fdf6e3;
-    --bg-secondary: #f5e5b8;
+    --text-primary: #FFFAFA;
+    --text-secondary: #F8F8FF;
+    --bg-primary: #187bcd;
+    --bg-secondary: #1167b1;
   }
   
   .theme-icon {

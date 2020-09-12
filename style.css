@@ -148,6 +148,14 @@
             transform: scale(1);
   }
 }
+@media only screen and (max-width: 600px) {
+  .frame{
+    display: none;
+  }
+  .center h2 {
+    display: block;
+  }
+}
 /* temp end */
 body {
   color: black;

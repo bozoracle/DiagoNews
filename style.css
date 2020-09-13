@@ -46,7 +46,7 @@ main {
   display: flex;
   align-items: center;
   flex-direction: row;
-  color:white;
+  color: var(--text-primary);
 }  
 /*Nav bar style */
 .navbar {

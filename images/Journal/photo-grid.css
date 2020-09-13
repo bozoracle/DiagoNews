@@ -15,4 +15,7 @@
     .card-wide {
       grid-column: span 2 / auto;
     }
+    .card-wide2 {
+      grid-column: span 4/ auto;
+    }
   }

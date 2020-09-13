@@ -8,13 +8,15 @@ body {
     background-color: var(--bg-primary);
     color: var(--text-primary);
     font-family: 'DM Mono', monospace;
+    display: grid;
+    grid-row: 2vh 92vh;
+    grid-column: 100vh 100vh;
 }
 .card-list {
     display: flex;
     padding: 9rem;
     padding-left: 30vh;
     overflow-x: scroll;
-    background-color: var(--bg-primary);
 }
 main {
   margin-left: 5rem;
@@ -36,7 +38,7 @@ main {
 }
 
 .card-list::-webkit-scrollbar-track {
-    background: var(--bg-secondary);
+    background: var(--bg-primary);
 }
 
 

@@ -1,29 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
-:root {
-    font-size: 16px;
-    font-family: 'Open Sans';
-    --text-primary: #b6b6b6;
-    --text-secondary: #ececec;
-    --bg-primary: #23232e;
-    --bg-secondary: #141418;
-    --transition-speed: 600ms;
-  }
-body {
-    background: var(--bg-primary);
-    color: #fff;
-    font-family: 'Noto Sans', sans-serif;
-}
-body::-webkit-scrollbar {
-    width: 0.25rem;
-  }
-  
-  body::-webkit-scrollbar-track {
-    background: #1e1e24;
-  }
-  
-  body::-webkit-scrollbar-thumb {
-    background: #3899ec;
-  }
   .page-name {
       padding-left: 50rem;
   }
@@ -45,6 +20,9 @@ body::-webkit-scrollbar {
       transform: scale(1);
       filter: grayscale(0);
     }
+  }
+  .page-name {
+    color: var(--text-primary);
   }
   .card {
     animation: cardEntrance 700ms ease-out;

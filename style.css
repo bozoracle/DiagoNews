@@ -9,7 +9,7 @@
   --bg-secondary: #141418;
   --transition-speed: 600ms;
 }
-p,div,summary {
+p,div,summary,h1,h2,h3 {
     user-select:none;
     -moz-user-select:none;
     -webkit-user-select:none;

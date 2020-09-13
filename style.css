@@ -17,6 +17,12 @@ p,div,summary,h1,h2,h3 {
     -ms-user-select:none;
   
 }
+h1,h2,h3 {
+  color: var(--text-primary);
+}
+a,p,div,summary {
+  color: var(--text-secondary);
+}
 body {
   color: black;
   background-color: white;
@@ -220,7 +226,7 @@ main {
 
 .solar {
   --text-primary: #FFFAFA;
-  --text-secondary: #F8F8FF;
+  --text-secondary: #414164;
   --nav-primary: #2193b0;
   --nav-secondary: #6dd5ed;
   --bg-primary: #187bcd;

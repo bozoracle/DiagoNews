@@ -10,7 +10,7 @@
   --transition-speed: 600ms;
 }
 p,div,summary,h1,h2,h3 {
-    user-select:none;
+    -user-select:none;
     -moz-user-select:none;
     -webkit-user-select:none;
     -webkit-touch-callout:none;
@@ -150,7 +150,7 @@ main {
     height: 5rem;
   }
   .page-name {
-    padding-left: 25%;
+    display: none;
   }
 
   .logo {

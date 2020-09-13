@@ -9,6 +9,14 @@
   --bg-secondary: #141418;
   --transition-speed: 600ms;
 }
+p,div,summary {
+    user-select:none;
+    -moz-user-select:none;
+    -webkit-user-select:none;
+    -webkit-touch-callout:none;
+    -ms-user-select:none;
+  
+}
 body {
   color: black;
   background-color: white;

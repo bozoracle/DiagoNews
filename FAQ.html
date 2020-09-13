@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FAQ</title>
     <script defer src="theme.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <style>
+      @import url("index.css");
+      @import url("style.css");
+    </style>
+    <link rel="stylesheet" href="index.css">
     <link rel="icon" href="/icon/faq.png">
 </head>
-<body>
+<body class="FAQ-body">
   <nav class="navbar">
     <ul class="navbar-nav">
       <li class="logo">
@@ -161,36 +165,66 @@
       </li>
     </ul>
   </nav>
-    <main>
-        <div class="text-section">
-        <div class="left-section">
-            <div class="top-text">
-        <h2 >What is this website for ?</h2>
-        <p>This website is a school project,<br>
-            involving topics that will be <br>
-            displayed either in articles ,photos <br>
-            or even videos. Some of the articles <br>
-            will be made by students. Some videos <br>
-            might concern a topics at school. It is <br>
-            all made with heart.</p>
-        </div>
-        <h2>Who is working on it ?</h2>
-        <p>M.Zafiroski and Ethan are working on this project.</p>
-        </div>
-        <div class="right-section">
-            <div class="top-text">
-        <h2>Can I participate ?</h2>
-        <p>Of course ! You and only YOU <br>
-            is invited to give your oppinion <br>
-            isn't great ?</p>
-            </div>
-        <h2>How can I participate ?</h2>
-        <p>Either ask the teacher or ask <br>
-            me the dev.Communication <br>
-            is simple either go to contact us<br>
-            page or just come in class</p>
-    </div>
-    </div>
+    <main class="FAQ-Main">
+      <h2 class="">Frequently Asked Questions</h2>
+
+<div style="visibility: hidden; position: absolute; width: 0px; height: 0px;">
+  <svg xmlns="http://www.w3.org/2000/svg">
+    <symbol viewBox="0 0 24 24" id="expand-more">
+      <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/><path d="M0 0h24v24H0z" fill="none"/>
+    </symbol>
+    <symbol viewBox="0 0 24 24" id="close">
+      <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/><path d="M0 0h24v24H0z" fill="none"/>
+    </symbol>
+  </svg>
+</div>
+
+<details open>
+  <summary>
+    What is this website for ?
+    <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>
+    <svg class="control-icon control-icon-close" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
+  </summary>
+  <p>This website is a school project,<br>
+    involving topics that will be <br>
+    displayed either in articles ,photos <br>
+    or even videos. Some of the articles <br>
+    will be made by students. Some videos <br>
+    might concern a topics at school. It is <br>
+    all made with heart.</p>
+</details>
+
+<details>
+
+  <summary>
+    Who is working on it ?
+    <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>
+    <svg class="control-icon control-icon-close" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
+  </summary>
+  <p>M.Zafiroski and Ethan are working on this project.</p>
+</details>
+
+<details>
+  <summary>
+    Can I participate ?
+    <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>
+    <svg class="control-icon control-icon-close" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
+  </summary>
+  <p>Of course ! You and only YOU <br>
+    is invited to give your oppinion <br>
+    isn't great ?</p>
+</details>
+<details>
+  <summary>
+    How can I participate ?
+    <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>
+    <svg class="control-icon control-icon-close" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
+  </summary>
+  <p>Either ask the teacher or ask <br>
+    me the dev.Communication <br>
+    is simple either go to "contact us"<br>
+    page or just come in class</p>
+</details>
     
     </main>
 </body>

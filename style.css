@@ -46,8 +46,17 @@ main {
   display: flex;
   align-items: center;
   flex-direction: row;
+}
+main h1,h2,h3,h4 {
   color: var(--text-primary);
-}  
+
+}
+h4 {
+  font-size: 1rem;
+}
+main li,p,button{
+  color: var(--text-secondary);
+}
 /*Nav bar style */
 .navbar {
   position: fixed;
@@ -210,12 +219,12 @@ main {
 }
 
 .light {
-  --text-primary: #1F1C18;
-  --text-secondary: #8E0E00;
-  --nav-primary: #e1eec3;
-  --nav-secondary:#F8FFAE;
-  --bg-primary: #F3F9A7;
-  --bg-secondary: #f05053;
+  --text-primary: #2d767f;
+  --text-secondary: #2d767f;
+  --nav-primary: #f3e9d2;
+  --nav-secondary: #88d498;
+  --bg-primary: #1a936f;
+  --bg-secondary: #114b5f;
 }
 
 .solar {

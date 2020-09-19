@@ -1,0 +1,284 @@
+/* * everything */
+:root {
+  font-size: 16px;
+  font-family: 'Montserrat';
+  --text-primary: #b6b6b6;
+  --text-secondary: #ececec;
+  --nav-primary: #D3CCE3;
+  --nav-secondary:#1cefff;
+  --bg-primary: #23232e;
+  --bg-secondary: #141418;
+  --transition-speed: 600ms;
+}
+p,div,summary,h1,h2,h3 {
+    -user-select:none;
+    -moz-user-select:none;
+    -webkit-user-select:none;
+    -webkit-touch-callout:none;
+    -ms-user-select:none;
+  
+}
+h1,h2,h3,summary {
+  color: var(--text-primary);
+}
+a,p,div {
+  color: var(--text-secondary);
+}
+body {
+  color: black;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  background: var(--bg-primary);
+  overflow-x: hidden;
+}
+main {
+  margin-left: 5rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  color: var(--text-primary);
+}
+/* * navigation */
+
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--nav-primary);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--nav-secondary);
+}
+/* * scrollbar end */  
+/* *Nav bar style */
+.navbar {
+  position: fixed;
+  background-color: var(--nav-primary);
+  transition: width 600ms ease;
+  z-index: 1000;
+}
+
+.navbar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+#themeButton {
+  color: #114b5f;
+}
+.nav-item {
+  width: 100%;
+}
+.center {
+  padding-left: 12vh;
+}
+.nav-item:last-child {
+  margin-top: auto;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  color: var(--bg-primary);
+  text-decoration: none;
+  filter: grayscale(100%) opacity(0.7);
+  transition: var(--transition-speed);
+}
+
+.nav-link:hover {
+  filter: grayscale(0%) opacity(1);
+  background: var(--nav-secondary);
+  color: var(--text-secondary);
+}
+
+.link-text {
+  display: none;
+  margin-left: 1rem;
+}
+
+.nav-link svg {
+  width: 2rem;
+  min-width: 2rem;
+  margin: 0 1.5rem;
+}
+
+.fa-primary {
+  color: var(--nav-primary);
+}
+
+.fa-secondary {
+  color: var(--bg-primary);
+}
+
+.fa-primary,
+.fa-secondary {
+  transition: var(2 * --transition-speed);
+}
+
+.logo {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: var(--text-secondary);
+  background: var(--bg-secondary);
+  font-size: 1.1rem;
+  letter-spacing: 0.2ch;
+  width: 100%;
+}
+
+.logo svg {
+  transform: rotate(0deg);
+  transition: var(--transition-speed);
+}
+
+.logo-text
+{
+  display: inline;
+  position: absolute;
+  left: -999px;
+  transition: var(--transition-speed);
+}
+
+.navbar:hover .logo svg {
+  transform: rotate(-180deg);
+}
+
+/* Small screens */
+@media only screen and (max-width: 600px) {
+  .navbar {
+    bottom: 0;
+    width: 100vw;
+    height: 5rem;
+  }
+  .page-name {
+    display: none;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .navbar-nav {
+    flex-direction: row;
+  }
+
+  .nav-link {
+    justify-content: center;
+  }
+.nav-item,.logo {
+  width: 7vh;
+  
+}
+  main {
+    margin: 0;
+  }
+}
+
+/* Large screens */
+@media only screen and (min-width: 600px) {
+  .navbar {
+    top: 0;
+    width: 5rem;
+    height: 100vh;
+  }
+
+  .navbar:hover {
+    width: 16rem;
+  }
+
+  .navbar:hover .link-text {
+    display: inline;
+  }
+
+  .navbar:hover .logo svg
+  {
+    margin-left: 11rem;
+  }
+
+  .navbar:hover .logo-text
+  {
+    left: 0px;
+  }
+}
+/* ! theme color */
+.dark {
+  --text-primary: #b6b6b6;
+  --text-secondary: #ececec;
+  --nav-primary: #3f4c6b;
+  --nav-secondary:#1cefff;
+  --bg-primary: #23232e;
+  --bg-secondary: #141418;
+}
+
+.light {
+  --text-primary: #66d37e;
+  --text-secondary: #2d767f;
+  --nav-primary: #f3e9d2;
+  --nav-secondary: #88d498;
+  --bg-primary: #1a936f;
+  --bg-secondary: #114b5f;
+}
+
+.solar {
+  --text-primary: #FFFAFA;
+  --text-secondary: #F8F8FF;
+  --nav-primary: #2193b0;
+  --nav-secondary: #6dd5ed;
+  --bg-primary: #187bcd;
+  --bg-secondary: #1167b1;
+}
+
+.theme-icon {
+  display: none;
+}
+
+.dark #darkIcon {
+  display: block;
+}
+
+.light #lightIcon {
+  display: block;
+}
+
+.solar #solarIcon {
+  display: block;
+}
+.msg {
+  background: rgba(0,0,0,0.2);
+  border-radius: 36px;
+  font-size: 1rem ;
+  margin: 1vh 1vh 1vh 1vh;
+  transition: 600ms;
+}
+.msg:hover {
+  background: #3899ec;
+  transition: 200ms;
+}
+.Welcome-message {
+  padding: 1vh 1vh 1vh 1vh;
+}
+.theme-icon {
+  display: none;
+}
+
+.dark #darkIcon {
+  display: block;
+}
+
+.light #lightIcon {
+  display: block;
+}
+
+.solar #solarIcon {
+  display: block;
+}

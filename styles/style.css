@@ -258,17 +258,6 @@ body::-webkit-scrollbar-thumb {
 .solar #solarIcon {
   display: block;
 }
-.msg {
-  background: rgba(0,0,0,0.2);
-  border-radius: 36px;
-  font-size: 1rem ;
-  margin: 1vh 1vh 1vh 1vh;
-  transition: 600ms;
-}
-.msg:hover {
-  background: #3899ec;
-  transition: 200ms;
-}
 .Welcome-message {
   padding: 1vh 1vh 1vh 1vh;
 }

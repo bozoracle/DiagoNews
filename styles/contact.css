@@ -2,6 +2,9 @@
 * {
   text-decoration: none;
 }
+.Phone-style{
+    display: none;
+}
 body {
     padding: 0;
     margin: 0;
@@ -148,4 +151,32 @@ main {
     -webkit-box-decoration-break: clone;
     background-clip: text;
     border-color: white;
+}
+@media only screen and (max-width: 600px) {
+/* ! Phone Style */
+.card-list {
+    display: none;
+}
+.contact-button{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    color: var(--text-primary);
+    background-color: var(--nav-primary);
+    border-radius: 12px;
+    padding: 2vh 5vh 2vh 2vh;
+    align-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 5vh;
+    margin: 3vh;
+}
+.contact-button:hover{
+    background-color: var(--nav-secondary);
+    color: (--text-secondary);
+}
+.Phone-style {
+    display: flex;
+    flex-direction: column;
+}
 }

@@ -1,0 +1,168 @@
+:root {
+    font-size: 16px;
+    font-family: 'Montserrat';
+    --text-primary: #b6b6b6;
+    --text-secondary: #ececec;
+    --nav-primary: #D3CCE3;
+    --nav-secondary:#1cefff;
+    --bg-primary: #23232e;
+    --bg-secondary: #141418;
+    --transition-speed: 600ms;
+  }
+  .Welcome-message {
+    padding: 1vh 1vh 1vh 1vh;
+  }
+  @import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+  @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
+  
+  /* Override UGG site */
+  #main {width: 100%; padding:0;}
+  .content-asset p {margin:0 auto;}
+  .breadcrumb {display:none;}
+  
+  /* Helpers */
+  /**************************/
+  .margin-top-10 {padding-top:10px;}
+  .margin-bot-10 {padding-bottom:10px;}
+  
+  /* Typography */
+  /**************************/
+  #parallax-world-of-ugg h1 {font-family:'Oswald', sans-serif; font-size:24px; font-weight:400; text-transform: uppercase; color:var(--text-primary); padding:0; margin:0;}
+  #parallax-world-of-ugg h2 {font-family:'Oswald', sans-serif; font-size:70px; letter-spacing:10px; text-align:center; color: white; font-weight:400; text-transform:uppercase; z-index:10; opacity:.9;}
+  #parallax-world-of-ugg h3 {font-family:'Oswald', sans-serif; font-size:14px; line-height:0; font-weight:400; letter-spacing:8px; text-transform: uppercase; color:#23232e;}
+  #parallax-world-of-ugg p {font-family:'Source Sans Pro', sans-serif; font-weight:400; font-size:14px; line-height:24px;}
+  .first-character {font-weight:400; float: left; font-size: 84px; line-height: 64px; padding-top: 4px; padding-right: 8px; padding-left: 3px; font-family: 'Source Sans Pro', sans-serif;}
+  
+  .sc,.ny {color: var(--text-primary);}
+  
+  /* Section - Title */
+  /**************************/
+  #parallax-world-of-ugg .title {background: white; padding: 60px; margin:0 auto; text-align:center;}
+  #parallax-world-of-ugg .title h1 {font-size:35px; letter-spacing:8px; color: #23232e;}
+  
+  /* Section - Block */
+  /**************************/
+  #parallax-world-of-ugg .block {background: var(--nav-primary); padding: 60px; width:820px; margin:0 auto; text-align:justify;}
+  #parallax-world-of-ugg .block-gray {background: #f2f2f2;padding: 60px;}
+  #parallax-world-of-ugg .section-overlay-mask {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: black; opacity: 0.70;}
+  
+  /* Section - Parallax */
+  /**************************/
+  #parallax-world-of-ugg .parallax-one {padding-top: 200px; padding-bottom: 200px; overflow: hidden; position: relative; width: 100%; background-image: url(https://images.unsplash.com/photo-1516831083365-0efd347838f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: top center;}
+  #parallax-world-of-ugg .parallax-two {padding-top: 200px; padding-bottom: 200px; overflow: hidden; position: relative; width: 100%; background-image: url(https://images.unsplash.com/photo-1484417894907-623942c8ee29?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center;}
+  #parallax-world-of-ugg .parallax-three {padding-top: 200px; padding-bottom: 200px; overflow: hidden; position: relative; width: 100%; background-image: url(https://images.unsplash.com/photo-1440688807730-73e4e2169fb8?dpr=1&auto=format&fit=crop&w=1500&h=1001&q=80&cs=tinysrgb&crop=); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center;}
+  #parallax-world-of-ugg .parallax-four {padding-top: 200px; padding-bottom: 200px; overflow: hidden; position: relative; width: 100%; background-image: url(https://images.unsplash.com/photo-1561931153-1c178973c0eb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center;}
+  
+  /* Extras */
+  /**************************/
+  #parallax-world-of-ugg .line-break {border-bottom:1px solid black; width: 150px; margin:0 auto;}
+  
+  /* Media Queries */
+  /**************************/
+  @media screen and (max-width: 959px) and (min-width: 768px) {
+    #parallax-world-of-ugg .block {padding: 40px; width:620px;}
+  }
+  @media screen and (max-width: 767px) {
+    #parallax-world-of-ugg .block {padding: 30px; width:420px;}
+    #parallax-world-of-ugg h2 {font-size:30px;}
+    #parallax-world-of-ugg .block {padding: 30px;}
+    #parallax-world-of-ugg .parallax-one, #parallax-world-of-ugg .parallax-two, #parallax-world-of-ugg .parallax-three {padding-top:100px; padding-bottom:100px;}
+  }
+  @media screen and (max-width: 479px) {
+    #parallax-world-of-ugg .block {padding: 30px 15px; width:290px;}
+  }
+
+  /* FAQ section */ 
+  .FAQ-body {
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+  }
+  .FAQ-Main{
+    display: flex;
+    flex-direction: column;
+  }
+  h2 {
+    margin: 20px auto 80px;
+    font-size: 38px;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 1.5;
+  }
+  
+  details {
+    width: 75%;
+    min-height: 5px;
+    max-width: 700px;
+    padding: 45px 70px 45px 45px;
+    margin: 0 auto;
+    position: relative;
+    font-size: 22px;
+    border: 1px solid rgba(0,0,0,.5);
+    border-radius: 15px;
+    box-sizing: border-box;
+    transition: all .3s;
+  }
+  
+  details + details {
+    margin-top: 20px;
+  }
+  
+  details[open] {
+    min-height: 50px;
+    background-color: var(--bg-secondary);
+    box-shadow: 2px 2px 20px rgba(0,0,0,.2);
+  }
+  
+  details p {
+    color: #ffffff;
+    font-weight: 300;
+  }
+  
+  summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  summary:focus {
+    outline: none;
+    
+  }
+  
+  summary:focus::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 0 0.2px var(--bg-primary);
+  }
+  
+  summary::-webkit-details-marker {
+    display: none
+  }
+  .control-icon {
+    fill: var(--text-primary);
+    transition: .3s ease;
+    pointer-events: none;
+  }
+  
+  .control-icon-close {
+    display: none;
+  }
+  
+  details[open] .control-icon-close {
+    display: initial;
+    transition: .3s ease;
+  }
+  
+  details[open] .control-icon-expand {
+    display: none;
+  }
+  

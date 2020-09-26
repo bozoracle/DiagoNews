@@ -9,6 +9,20 @@
     --bg-secondary: #141418;
     --transition-speed: 600ms;
   }
+  p,div,summary,h1,h2,h3 {
+    -user-select:none;
+    -moz-user-select:none;
+    -webkit-user-select:none;
+    -webkit-touch-callout:none;
+    -ms-user-select:none;
+  
+}
+h1,h2,h3,summary {
+  color: var(--text-primary);
+}
+a,p,div {
+  color: var(--text-secondary);
+}
   @import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
   @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
   

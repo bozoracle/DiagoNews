@@ -43,15 +43,18 @@ main {
 /* * navigation */
 
 body::-webkit-scrollbar {
-  width: 0.25rem;
+  width: 7px;
+  
 }
 
 body::-webkit-scrollbar-track {
   background: var(--nav-primary);
+
 }
 
 body::-webkit-scrollbar-thumb {
   background: var(--nav-secondary);
+  border-radius: 55px;
 }
 /* * scrollbar end */  
 /* *Nav bar style */

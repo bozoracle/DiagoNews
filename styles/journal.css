@@ -23,16 +23,37 @@ body h1,h2,h3,h4,h5,h6,p {
 }
 
 .btn{
-  border: 1px white;
-  background: #262626;
-  padding: 10px;
   text-decoration: none;
   border-radius: 3px;
   font-weight: bold;
   margin-top: 10px ;
   color: white;
   text-decoration: none;
+  background: none;
+  border: 2px solid;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
 }
+.btn:hover,.btn:focus {
+  animation: pulse 1s;
+  box-shadow: 0 0 0 2em rgba(#fff,0)}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 #{adjust-hue($color, 45deg)}; }
+}
+/* .offset {  
+  box-shadow: 
+    0.3em 0.3em 0 0 var(--color),
+    inset 0.3em 0.3em 0 0 var(--color);
+  
+  &:hover,
+  &:focus {
+    box-shadow: 
+      0 0 0 0 var(--hover),
+      inset 6em 3.5em 0 0 var(--hover);
+  }
+} */
 
 /* Showcase */
 .showcase {
